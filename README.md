@@ -1,5 +1,5 @@
 # BuzzWord
-BuzzWord is an Android application that creates alphanumeric equivalents of any given phone number. This allows the user to discover any hidden words in their number. 
+BuzzWord is an Android application that creates alphanumeric equivalents of any given phone number. This allows the user to discover any hidden words in their number based on keypad mappings. 
 
 For example: *456-789-2899* is equivalent to *456-789-**BUZZ***
 
