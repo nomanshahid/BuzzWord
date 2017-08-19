@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nomanshahid.buzzword.SliderActivity"
+    android:background="#FFEB3B">
+
+    <TextView
+        android:id="@+id/phoneTitle"
+        android:layout_width="334dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:textColor="000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tryNewNumberBtn"
+        android:layout_width="338dp"
+        android:layout_height="51dp"
+        android:text="Try A New Number"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.51" />
+
+    <TextView
+        android:id="@+id/definition"
+        android:layout_width="333dp"
+        android:layout_height="376dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="212121"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tryNewNumberBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTitle"
+        app:layout_constraintVertical_bias="0.541"
+        app:layout_constraintHorizontal_bias="0.509" />
+</android.support.constraint.ConstraintLayout>
