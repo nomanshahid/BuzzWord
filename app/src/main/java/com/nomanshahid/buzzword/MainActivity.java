@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Word> realWords = new ArrayList<>();
     private HashMap<Character, char[]> mKeypad = new HashMap<Character, char[]>() {
         {
+            put('1', new char[] {'0'});
             put('2', new char[] {'a', 'b', 'c'});
             put('3', new char[] {'d', 'e', 'f'});
             put('4', new char[] {'g', 'h', 'i'});
