@@ -301,8 +301,21 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Void aVoid) {
-            Toast.makeText(getApplicationContext(), "DONE!!!", Toast.LENGTH_LONG).show();
-            context.startActivity(new Intent(context, SliderActivity.class));
+            //Toast.makeText(getApplicationContext(), "DONE!!!", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(MainActivity.this, SliderActivity.class);
+            if(realWords.size() == 0) {
+                intent.putExtra("WORD", "Nothing found!");
+                intent.putExtra("DEFINITION", "Unfortunately, no words were found that match " +
+                        "your phone number. However, you can experiment with other phone numbers " +
+                        "to discover new words.");
+            } else {
+                //Log.e(TAG,"!!!!!!!!!!!!************" + realWords.get(0).getWord());
+                intent.putExtra("WORD", realWords.get(0).getWord());
+                intent.putExtra("DEFINITION", realWords.get(0).getDefinition());
+            }
+            intent.putExtra("PHONE_NUMBER", phoneNumber);
+            startActivity(intent);
+            //context.startActivity(new Intent(context, SliderActivity.class));
             //tempText.setText(potentialWords.size() + " " + realWords.size());
         }
     }
